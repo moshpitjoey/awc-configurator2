@@ -4,7 +4,8 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { HexColorPicker } from "react-colorful";
 import { useShallow } from "zustand/react/shallow";
-import { useConfiguratorStore } from "./store/configuratorStore";
+import { useConfiguratorStore } from "./store/configuratorStore.js";
+
 
 function JerseyModel({ colorZones }) {
   const { scene, materials } = useGLTF("/awc_dummy_model.glb");
